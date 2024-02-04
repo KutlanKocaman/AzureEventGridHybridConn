@@ -9,7 +9,7 @@ variables:
   azureServiceConnection: 'kk-service-connection'
   resourceGroupName: 'EventGridHybridConnectionRG'
   location: 'uk-south'
-  templateFile: './main.bicep'
+  templateFile: 'start/infra/main.bicep'
 pool:
   vmImage: $(vmImageName)
 
