@@ -25,6 +25,6 @@ steps:
     location: '$(location)'
     templateLocation: 'Linked artifact'
     csmFile: '$(templateFile)'
-    overrideParameters: '-location $(location)'
+    #overrideParameters: '-location $(location)'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
