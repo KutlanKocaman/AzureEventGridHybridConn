@@ -14,6 +14,10 @@ pool:
   vmImage: $(vmImageName)
 
 steps:
+- script: ls -la
+  displayName: 'List files in the directory'
+
+steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
