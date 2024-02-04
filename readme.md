@@ -2,11 +2,11 @@ This repo shows how to set up an event grid subscription to a "hybrid connection
 
 Prerequisites:
 1. A resource group in Azure called EventGridHybridConnectionRG
-2. A service connection able to deploy to the EventGridHybridConnectionRG resource group
+2. A service connection able to deploy to the EventGridHybridConnectionRG resource group (replace kk-service-connection with the name of your service connection in azure-pipelines.yml)
 
 Steps:
 1. Set up a DevOps pipeline using the azure-pipelines.yml file
-2. Run the pipeline to deploy
+2. Run the pipeline to deploy the bicep file which will create the following resources
     1. Azure Relay
     2. Hybrid Connection
     3. Event Grid Topic
