@@ -1,8 +1,8 @@
 param location string = resourceGroup().location
 param relayName string = 'RelayForEventGridHybridConn'
 param hybridConnectionName string = 'HybridConnFromEventGrid'
-param eventGridTopicName string = 'KKEventGridTestTwo'
-param eventGridSubscriptionName string = 'SubscriptionToHyridConn'
+param eventGridTopicName string = 'EventGridToHybridConn'
+param eventGridSubscriptionName string = 'SubscriptionToHybridConn'
 
 resource relayNamespace 'Microsoft.Relay/namespaces@2021-11-01' = {
   name: relayName
