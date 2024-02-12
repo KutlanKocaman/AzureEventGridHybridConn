@@ -9,7 +9,7 @@ variables:
   azureServiceConnection: 'kk-service-connection'
   resourceGroupName: 'EventGridHybridConnectionRG'
   location: 'uk-south'
-  templateFile: 'start/infra/main.bicep'
+  templateFile: 'Bicep/main.bicep'
 pool:
   vmImage: $(vmImageName)
 
@@ -23,6 +23,5 @@ steps:
     location: '$(location)'
     templateLocation: 'Linked artifact'
     csmFile: '$(templateFile)'
-    #overrideParameters: '-location $(location)'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
